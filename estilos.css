@@ -1,0 +1,132 @@
+body{
+    background-color: #E5E5E5;
+    width: 720;
+    height: 510;
+    margin-left: 18%;
+    margin-right: 18%;
+}
+
+.flex-container{
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    padding: 30px;
+    display: flex;
+    flex-flow: row;
+    justify-content:space-between;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.caja{
+    border: 1px solid #E5E5E5;
+    background-color: #E5E5E5;
+    font-family: 'Courier New', Courier, monospace; 
+    font-weight: bold;
+    width: 200px;
+    height: 472px;
+    line-height: 10px;
+    margin: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.c1{
+    background-color: #E5E5E5;
+    flex-grow: 1;
+    flex-basis: 10%;
+}
+.c2{
+    background-color: #E5E5E5;
+    flex-basis: 60%;
+    text-align: left;
+    
+}
+
+.c3{
+    background-color: #ffffff;
+    flex-grow: 1;
+    flex-basis: 20%;
+    padding: 20px;
+    display:block;
+    flex-flow: column;
+    justify-content: space-between;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5%;
+}
+
+.entry{
+    background-color: #E5E5E5;
+    border: #E5E5E5;
+    padding: 40px;
+    flex-direction: column;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+::placeholder{
+    color: darkblue;
+    font-size: 1rem;
+}
+
+samp{
+    color:gray;
+    font-size:0.5rem;
+    margin-right: 20%;
+    justify-content: space-between;
+}
+
+.icono{
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.buts{
+    padding: 40px;
+    display: block;
+    margin-top: auto;
+}
+
+
+button{
+    width: 170px;
+    height: 35px;
+    margin-top: auto;
+    flex-flow: row;
+    
+}
+
+.encriptar{
+    background-color: darkblue;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10%;
+    color: #ffffff;
+}
+
+.desencriptar{
+    background-color: lightblue;
+    padding: 10px;
+    color: darkblue;
+    border-color: darkblue;
+    border-radius: 10%;
+    
+}
+
+.figura{
+    width:100%;
+    margin-top:50px;
+    justify-content: space-between;
+}
+
+.texto1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.texto2{
+    font-size:0.6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: gray;
+}
