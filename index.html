@@ -12,19 +12,19 @@
             <img src="img/logo1.png" alt="img">
         </div>
         <div class="caja c2">
-            <input class="entry" type="text" placeholder="Ingrese el texto aqui"/>
+            <textarea class="entry" type="text" placeholder="Ingrese el texto aqui"></textarea>
             <div class="buts">
-                <samp><img src="img/vector.png" class="icono" alt="icono">solo letras minúsculas y sin acentos</samp>
-                <button class="encriptar" type="button">Encriptar</button>
-                <button class="desencriptar" type="button">Desencriptar</button>
+                <samp><img src="img/vector.png" class="icono" alt="icono">Solo letras minúsculas y sin acentos</samp>
+                <button class="bEncriptar" onclick="bEncriptar()" >Encriptar</button>
+                <button class="bDesencriptar" onclick="bDesencriptar()">Desencriptar</button>
             </div>
         </div>
         <div class="caja c3">
-            <rectangle>
-                <img src="img/figura.png" class="figura" alt="figura">
-            </rectangle>
+            <textarea class="mensaje"></textarea>
+                <button class="copiar" onclick="copiar()">Copiar</button>
             <span class="texto1">Ningún mensaje fue encontrado<p class="texto2">Ingresa el texto que desees encriptar o desencriptar.</p></span>
         </div>
-    </section>  
+    </section>
+    <script src="script.js" type="text/javascript"></script>  
 </body>
 </html>
