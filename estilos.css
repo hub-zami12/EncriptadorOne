@@ -4,6 +4,7 @@ body{
     height: 510;
     margin-left: 18%;
     margin-right: 18%;
+        
 }
 
 .flex-container{
@@ -15,7 +16,6 @@ body{
     justify-content:space-between;
     width: 100%;
     margin: 0 auto;
-    
 }
 
 .caja{
@@ -40,7 +40,6 @@ body{
     background-color: #E5E5E5;
     flex-basis: 60%;
     text-align: left;
-    
 }
 
 .c3{
@@ -65,12 +64,17 @@ body{
     min-height: 17vh;
     display: flex;
     justify-content: space-between;
+    text-transform: lowercase;
 }
 
 ::placeholder{
     color: darkblue;
     font-size: 1rem;
 }
+
+.entry:focus{
+    outline: none;
+    }
 
 samp{
     color:gray;
@@ -84,6 +88,8 @@ samp{
     justify-content: center;
     margin-right: 2%;
     width: 2%;
+    color: #495057;
+    font-size: 18px;
 }
 
 .buts{
@@ -100,7 +106,7 @@ button{
 
 }
 
-.bEncriptar{
+.botonEncriptar{
     background-color: darkblue;
     
     margin: 10px;
@@ -109,16 +115,15 @@ button{
     color: #ffffff;
 }
 
-.bDesencriptar{
+.botonDesencriptar{
     background-color: lightblue;
     color: darkblue;
     border: 1px solid darkblue;
     border-radius: 24px;
 }
 
-
 .mensaje{
-    height: 510px;
+    height: 300px;
     background:white;
     background-image: url("img/figura.png");
     background-repeat:no-repeat;
@@ -126,8 +131,8 @@ button{
     border: none;
     border-radius: 24px;
     color:#0A3871;
-    margin-left: -20px;
-    margin-top: -20px;
+    margin-left: -100px;
+    margin-top: 10px;
     padding-left: 40px;
     position: fixed;
   }
@@ -136,21 +141,24 @@ button{
     outline: none;
     }
 
-.texto1{
+.textos{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 320px;
 }
+
 .texto2{
     font-size:0.6rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: gray;
 }
+
 .copiar{
     border: 1px solid #0A3871;
     border-radius:24px;
     color: #0A3871;
     cursor: pointer;
     height: 40px;
-    margin-left: -30px;
+    margin-left: -5px;
     margin-top: 420px;
     position: absolute;
     width: 200px;
