@@ -1,10 +1,12 @@
+
 body{
     background-color: #E5E5E5;
     width: 720;
     height: 510;
     margin-left: 18%;
     margin-right: 18%;
-        
+    line-height: 150%;
+    overflow-y: hidden;        
 }
 
 .flex-container{
@@ -59,10 +61,13 @@ body{
 .entry{
     background-color: #E5E5E5;
     border: #E5E5E5;
-    padding: 40px;
+    color: darkblue;
+    width: 90%;
+    padding: 50px;
     flex-direction: column;
-    min-height: 17vh;
+    min-height: 12vh;
     display: flex;
+    margin-top: 10px;
     justify-content: space-between;
     text-transform: lowercase;
 }
@@ -79,7 +84,7 @@ body{
 samp{
     color:gray;
     font-size:0.5rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-right: 20%;
     justify-content: space-between;
 }
@@ -107,8 +112,7 @@ button{
 }
 
 .botonEncriptar{
-    background-color: darkblue;
-    
+    background-color: darkblue;    
     margin: 10px;
     border-radius: 24px;
     border: 1px solid darkblue;
@@ -142,14 +146,14 @@ button{
     }
 
 .textos{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin-top: 320px;
 }
 
 .texto2{
     font-size:0.6rem;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: gray;
+    font-family:'Inter', sans-serif;
+    color: gray;    
 }
 
 .copiar{
@@ -163,3 +167,347 @@ button{
     position: absolute;
     width: 200px;
   }
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        width: 0;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flex-container {
+        flex-flow: column;
+        padding: 0px;
+    }
+
+    .caja {
+        width: 100%;
+        height: 472px;
+        line-height: 10px;
+        overflow: hidden;
+    }
+
+    .c1 img {
+        display: relative;
+        margin-left: -40px;
+        margin-top: 10px;
+        max-width: 100%;
+        height: auto;
+        padding: 40px;
+    }
+
+    .c3{
+        background-color: #ffffff;
+        flex-grow: 0;
+        flex-basis: 10%;
+        padding: 0;
+        display:block;
+        flex-flow: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 24px;
+    }
+
+    .entry{
+        background-color: #E5E5E5;
+        border: #E5E5E5;
+        font-family: 'Inter', sans-serif;
+        font-size: 32px;
+        letter-spacing: 0px;
+        width: 90%;
+        padding: 40px;
+        flex-direction: column;
+        min-height: 30vh;
+        margin-left: 0px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-transform: lowercase;
+    }
+
+    ::placeholder{
+        color: darkblue;
+        font-size: 1rem;
+    }
+    
+    .icono{
+        justify-content: center;
+        width: 16px;
+        color: #495057;
+        font-size: 1px;
+    }
+
+    samp{
+        color:gray;
+        font-size:0.7rem;
+        font-family: 'Inter', sans-serif;
+        margin-right: 30%;
+        justify-content: space-between;
+    }
+
+    .buts {
+        margin-top: 10px;
+        padding: 50px;
+        margin-top: 35%;
+    }
+    
+    button{
+        width: 332px;
+        height: 67px;
+        margin-top: auto;   
+        cursor: pointer;
+    }
+    
+    .botonEncriptar{
+        background-color: darkblue;    
+        margin: 10px;
+        border-radius: 24px;
+        border: 1px solid darkblue;
+        color: #ffffff;
+    }
+    
+    .botonDesencriptar{
+        background-color: lightblue;
+        color: darkblue;
+        border: 1px solid darkblue;
+        border-radius: 24px;
+    }
+
+
+    .mensaje {
+        height: 50px;
+        width: 100px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 5px;
+        background-image: none;
+        position:fixed;
+        padding-left: 0;
+        border-radius: 24px;
+        font-size: 24px;;
+        background-position: center;
+    }
+    .copiar {
+        margin-top: 10px;
+        margin-left: 10%;
+        margin-right: 50%;
+        margin: 5%;
+        width: 100%;
+        height: 67px;
+        position: fixed;
+    }
+
+    .textos {
+        margin: 50px;
+        font-family:'Inter', sans-serif;
+        position: relative;
+    }
+
+    .texto1{
+        font-size: 1.6rem;
+        line-height: 40px;
+    }
+
+    .texto2{
+        font-size:1.1rem;
+        color: gray;
+        line-height: 40px;
+
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        margin: 0;
+        width: 0;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .flex-container {
+        flex-flow: column;
+        padding: 0;
+    }
+    
+    .entry{
+        background-color: #E5E5E5;
+        border: #E5E5E5;
+        font-family: 'Inter', sans-serif;
+        letter-spacing: 0px;
+        width: 90%;
+        padding: 10px;
+        flex-direction: column;
+        min-height: 15vh;
+        margin-left: 0px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        text-transform: lowercase;
+    }
+    
+    ::placeholder{
+        color: darkblue;
+        font-size: 1rem;
+    }
+
+    samp{
+        color:gray;
+        font-size:0.7rem;
+        font-family: 'Inter', sans-serif;
+        margin-right: 30%;
+        justify-content: space-between;
+    }
+
+    .icono{
+        justify-content: center;
+        margin-right: 2%;
+        width: 4.5%;
+        color: #495057;
+        font-size: 18px;
+    }
+
+    .caja {
+        width: 100%;
+        margin: 0;
+    }
+
+    .c1 img {
+        display: relative;
+        margin-left: -70px;
+        margin-top: 0px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .c2{
+        background-color: #E5E5E5;
+        flex-basis: 60%;
+        text-align: left;
+    }
+
+    .c3{
+        background-color: #ffffff;
+        flex-grow: 0;
+        flex-basis: 10%;
+        padding: 0;
+        display:block;
+        flex-flow: column;
+        justify-content: space-between;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        border-radius: 24px;
+    }
+    
+    .buts {
+        margin-top: 10px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button{
+        width: 343px;
+        height: 67px;
+        margin-top: auto;   
+        cursor: pointer;
+    }
+
+    .botonEncriptar{
+        background-color: darkblue;    
+        margin: 10px;
+        border-radius: 24px;
+        border: 1px solid darkblue;
+        color: #ffffff;
+    }
+    
+    .botonDesencriptar{
+        background-color: lightblue;
+        color: darkblue;
+        border: 1px solid darkblue;
+        border-radius: 24px;
+    }
+
+    .mensaje {
+        height: 100px;
+        width: 150px;
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 5px;
+        background-image: none;
+        position:fixed;
+        padding-left: 0;
+        border-radius: 24px;
+        font-size: 1 rem;
+        background-position: center;
+    }
+
+    .copiar {
+        margin-top: 10px;
+        margin-left: 0;
+        position: relative;
+        align-items: center;
+    }
+
+    .textos {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .texto1{
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    .texto2{
+        font-size:16px;
+        font-family:'Inter', sans-serif;
+        color: gray;
+        text-align: center;
+        line-height: 20px;
+
+    }
+}
+
+  @media (max-width: 1024px) {
+    body {
+        margin: 0;
+        width: 100%;
+        height: auto;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .flex-container {
+        flex-flow: column;
+        padding: 20px;
+    }
+    .caja {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+    .buts {
+        margin-top: 20px;
+        padding: 20px;
+    }
+    .mensaje {
+        margin-left: 0;
+        margin-top: 20px;
+        width: calc(100% - 40px);
+        position: relative;
+    }
+    .copiar {
+        margin-top: 20px;
+        margin-left: 0;
+        position: relative;
+    }
+    .textos {
+        margin-top: 20px;
+    }
+}
